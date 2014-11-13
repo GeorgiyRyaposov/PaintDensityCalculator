@@ -1,13 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Xml.Serialization;
+using PaintDensityCalculator.Utils;
 
 namespace PaintDensityCalculator.Models
 {
-    public class DensityType
+    [XmlRoot("XmlDensityTypeRoot")]
+    public class DensityType : NotifyPropertyChangedImplementation
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        [XmlAttribute("id")]
+        public int Id { get { return _id; } set { _id = value; OnPropertyChanged("Id"); } }
+
+        [XmlAttribute(DataType = "string")]
+        public string Name { get { return _name; } set { _name = value; OnPropertyChanged("Name"); } }
+
+        private int _id;
+        private string _name;
     }
 }

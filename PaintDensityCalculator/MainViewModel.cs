@@ -5,10 +5,11 @@ using System.Linq;
 using System.Windows.Controls;
 using System.Windows.Data;
 using PaintDensityCalculator.Models;
+using PaintDensityCalculator.Utils;
 
 namespace PaintDensityCalculator
 {
-    public class MainViewModel : IDataErrorInfo, INotifyPropertyChanged
+    public class MainViewModel : NotifyPropertyChangedImplementation, IDataErrorInfo
     {
         public MainViewModel()
         {
@@ -74,18 +75,6 @@ namespace PaintDensityCalculator
                 }
                 return result;
             }
-        }
-
-        #endregion
-
-        #region INotifyPropertyChanged members
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         }
 
         #endregion
@@ -268,7 +257,7 @@ namespace PaintDensityCalculator
                 return true;
 
             Density density = item as Density;
-            return density != null && density.Type == _currentType.Id;
+            return density != null && density.DensType == _currentType.Id;
         }
 
         //Жестокий фильтр для грунтов предназначеных для смешивания..
