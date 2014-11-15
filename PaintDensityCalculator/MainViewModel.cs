@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Windows.Controls;
 using System.Windows.Data;
+using PaintDensityCalculator.BLL;
 using PaintDensityCalculator.Models;
 using PaintDensityCalculator.Utils;
 
@@ -22,13 +23,14 @@ namespace PaintDensityCalculator
                     new DensityType {Id = (int) DensityTypes.Hardener, Name = "Отвердитель"},
                     new DensityType {Id = (int) DensityTypes.Others, Name = "Прочее"}
                 };
-
+//            DensityBll.CsvToXml();
+//            DensityBll.FirstRun();
             //Достать все из таблицы плотностей чтобы забиндить на 2й комбобокс
-            Densities = new ObservableCollection<Density>(colorItEntities.Density.ToList());
+            Densities = new ObservableCollection<Density>(DensityBll.GetListOfDensities());
 
             GruntDensities =
-                new ObservableCollection<Density>(colorItEntities.Density.
-                    Where(gr => gr.Type == (int)DensityTypes.Grunts).ToList());
+                new ObservableCollection<Density>(Densities.
+                    Where(gr => gr.DensType == (int)DensityTypes.Grunts).ToList());
 
 
             _densitiesComboView = CollectionViewSource.GetDefaultView(Densities);
@@ -100,6 +102,19 @@ namespace PaintDensityCalculator
         public ObservableCollection<DensityType> DenTypes { get; set; }
         public ObservableCollection<Density> Densities { get; set; }
         public ObservableCollection<Density> GruntDensities { get; set; }
+
+        private DensityBll _densityBll;
+        public DensityBll DensityBll
+        {
+            get
+            {
+                if (_densityBll == null)
+                {
+                    _densityBll = new DensityBll();
+                }
+                return _densityBll;
+            }
+        }
 
         public DensityType CurrentType
         {
@@ -256,29 +271,29 @@ namespace PaintDensityCalculator
             if (_currentType == null)
                 return true;
 
-            Density density = item as Density;
+            var density = item as Density;
             return density != null && density.DensType == _currentType.Id;
         }
 
         //Жестокий фильтр для грунтов предназначеных для смешивания..
         private bool GruntDensityFilter(object item)
         {
-            Density density = item as Density;
+            var density = item as Density;
 
             if (CurrentDensity == null || density == null)
                 return false;
 
-            int[] FillerWet = { 34, 35, 36 };
-            int[] FillerDry = { 51, 52, 53 };
-            int[] FillerHB = { 37, 38, 39 };
-            int[] compareWith = { CurrentDensity.ID };
+            int[] fillerWet = { 34, 35, 36 };
+            int[] fillerDry = { 51, 52, 53 };
+            int[] fillerHb = { 37, 38, 39 };
+            int[] compareWith = { CurrentDensity.Id };
 
-            if (FillerWet.Contains(CurrentDensity.ID))
-                return FillerWet.Except(compareWith).Contains(density.ID);
-            if (FillerDry.Contains(CurrentDensity.ID))
-                return FillerDry.Except(compareWith).Contains(density.ID);
-            if (FillerHB.Contains(CurrentDensity.ID))
-                return FillerHB.Except(compareWith).Contains(density.ID);
+            if (fillerWet.Contains(CurrentDensity.Id))
+                return fillerWet.Except(compareWith).Contains(density.Id);
+            if (fillerDry.Contains(CurrentDensity.Id))
+                return fillerDry.Except(compareWith).Contains(density.Id);
+            if (fillerHb.Contains(CurrentDensity.Id))
+                return fillerHb.Except(compareWith).Contains(density.Id);
 
             return false;
         }
@@ -327,7 +342,7 @@ namespace PaintDensityCalculator
         private void UpdateMassThinner()
         {
             double thinnerValue = 0;
-            var firstOrDefault = colorItEntities.Density.FirstOrDefault(density => density.ID == CurrentDensity.AccordingThinner);
+            var firstOrDefault = Densities.FirstOrDefault(density => density.Id == CurrentDensity.AccordingThinner);
             if (firstOrDefault != null)
             {
                 thinnerValue = firstOrDefault.DensityValue;
@@ -346,7 +361,7 @@ namespace PaintDensityCalculator
         private void UpdateMassHardener()
         {
             double hardenerValue = 0;
-            var firstOrDefault = colorItEntities.Density.FirstOrDefault(density => density.ID == CurrentDensity.AccordingHardener);
+            var firstOrDefault = Densities.FirstOrDefault(density => density.Id == CurrentDensity.AccordingHardener);
             if (firstOrDefault != null)
             {
                 hardenerValue = firstOrDefault.DensityValue;

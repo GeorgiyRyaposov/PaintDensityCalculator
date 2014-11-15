@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("databackup.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("density.xml")]
 
 

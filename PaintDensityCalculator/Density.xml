@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Densities>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>1</id>
+    <DensType>0</DensType>
+    <Name>Буран</Name>
+    <DensityValue>0.92</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>2</id>
+    <DensType>0</DensType>
+    <Name>040 Toyota белая</Name>
+    <DensityValue>1.1</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>4</id>
+    <DensType>0</DensType>
+    <Name>105 Франкония</Name>
+    <DensityValue>0.97</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>5</id>
+    <DensType>0</DensType>
+    <Name>110 Рубин</Name>
+    <DensityValue>0.97</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>6</id>
+    <DensType>0</DensType>
+    <Name>127 Вишня</Name>
+    <DensityValue>0.95</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>7</id>
+    <DensType>0</DensType>
+    <Name>201 Белая</Name>
+    <DensityValue>1.1</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>8</id>
+    <DensType>0</DensType>
+    <Name>202 Белая</Name>
+    <DensityValue>1.1</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>9</id>
+    <DensType>0</DensType>
+    <Name>215 Сафари</Name>
+    <DensityValue>1.1</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>10</id>
+    <DensType>0</DensType>
+    <Name>230 Жемчуг</Name>
+    <DensityValue>0.94</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>11</id>
+    <DensType>0</DensType>
+    <Name>233 Белая</Name>
+    <DensityValue>1.1</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>12</id>
+    <DensType>0</DensType>
+    <Name>276 Приз</Name>
+    <DensityValue>0.92</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>13</id>
+    <DensType>0</DensType>
+    <Name>277 Антилопа</Name>
+    <DensityValue>0.94</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>14</id>
+    <DensType>0</DensType>
+    <Name>277 Антилопа Люкс</Name>
+    <DensityValue>0.93</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>15</id>
+    <DensType>0</DensType>
+    <Name>280 Мираж</Name>
+    <DensityValue>0.93</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>16</id>
+    <DensType>0</DensType>
+    <Name>303 Хаки</Name>
+    <DensityValue>1</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>17</id>
+    <DensType>0</DensType>
+    <Name>310 Валюта</Name>
+    <DensityValue>0.91</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>18</id>
+    <DensType>0</DensType>
+    <Name>347 Золото инков</Name>
+    <DensityValue>0.94</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>19</id>
+    <DensType>0</DensType>
+    <Name>360 Сочи</Name>
+    <DensityValue>0.95</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>20</id>
+    <DensType>0</DensType>
+    <Name>371 Амулет</Name>
+    <DensityValue>0.93</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>21</id>
+    <DensType>0</DensType>
+    <Name>377 Мурена</Name>
+    <DensityValue>0.94</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>22</id>
+    <DensType>0</DensType>
+    <Name>385 Изумруд</Name>
+    <DensityValue>0.92</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>23</id>
+    <DensType>0</DensType>
+    <Name>420 Балтика</Name>
+    <DensityValue>0.93</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>24</id>
+    <DensType>0</DensType>
+    <Name>448 Рапсодия</Name>
+    <DensityValue>0.94</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>25</id>
+    <DensType>0</DensType>
+    <Name>499 Ривьера</Name>
+    <DensityValue>0.94</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>26</id>
+    <DensType>0</DensType>
+    <Name>601 Черная</Name>
+    <DensityValue>0.91</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>27</id>
+    <DensType>0</DensType>
+    <Name>606 Млечный путь</Name>
+    <DensityValue>0.94</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>28</id>
+    <DensType>0</DensType>
+    <Name>620 Мускат</Name>
+    <DensityValue>0.94</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>29</id>
+    <DensType>0</DensType>
+    <Name>630 Кварц</Name>
+    <DensityValue>0.94</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>30</id>
+    <DensType>0</DensType>
+    <Name>640 Серебристая</Name>
+    <DensityValue>0.92</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>31</id>
+    <DensType>0</DensType>
+    <Name>690 Снежная королева</Name>
+    <DensityValue>0.93</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>32</id>
+    <DensType>1</DensType>
+    <Name>Washprimer 1K CF</Name>
+    <DensityValue>0.9</DensityValue>
+    <AccordingThinner>43</AccordingThinner>
+    <AccordingHardener>44</AccordingHardener>
+    <ProportionThinner>0.2</ProportionThinner>
+    <ProportionHardener>0.2</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>33</id>
+    <DensType>1</DensType>
+    <Name>2K Plastic Primer</Name>
+    <DensityValue>1.4</DensityValue>
+    <AccordingThinner>43</AccordingThinner>
+    <AccordingHardener>42</AccordingHardener>
+    <ProportionThinner>0.4</ProportionThinner>
+    <ProportionHardener>0.2</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>34</id>
+    <DensType>1</DensType>
+    <Name>2K Filler 540 белый (шлиф)</Name>
+    <DensityValue>1.517</DensityValue>
+    <AccordingThinner>43</AccordingThinner>
+    <AccordingHardener>44</AccordingHardener>
+    <ProportionThinner>0.2</ProportionThinner>
+    <ProportionHardener>0.2</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>35</id>
+    <DensType>1</DensType>
+    <Name>2K Filler 540 серый (шлиф)</Name>
+    <DensityValue>1.48</DensityValue>
+    <AccordingThinner>43</AccordingThinner>
+    <AccordingHardener>44</AccordingHardener>
+    <ProportionThinner>0.2</ProportionThinner>
+    <ProportionHardener>0.2</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>36</id>
+    <DensType>1</DensType>
+    <Name>2K Filler 540 чёрный (шлиф)</Name>
+    <DensityValue>1.42</DensityValue>
+    <AccordingThinner>43</AccordingThinner>
+    <AccordingHardener>44</AccordingHardener>
+    <ProportionThinner>0.2</ProportionThinner>
+    <ProportionHardener>0.2</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>37</id>
+    <DensType>1</DensType>
+    <Name>2K High Build Filler белый</Name>
+    <DensityValue>1.56</DensityValue>
+    <AccordingThinner>43</AccordingThinner>
+    <AccordingHardener>44</AccordingHardener>
+    <ProportionThinner>0.2</ProportionThinner>
+    <ProportionHardener>0.2</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>38</id>
+    <DensType>1</DensType>
+    <Name>2K High Build Filler серый</Name>
+    <DensityValue>1.53</DensityValue>
+    <AccordingThinner>43</AccordingThinner>
+    <AccordingHardener>44</AccordingHardener>
+    <ProportionThinner>0.2</ProportionThinner>
+    <ProportionHardener>0.2</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>39</id>
+    <DensType>1</DensType>
+    <Name>2K High Build Filler чёрный</Name>
+    <DensityValue>1.48</DensityValue>
+    <AccordingThinner>43</AccordingThinner>
+    <AccordingHardener>44</AccordingHardener>
+    <ProportionThinner>0.2</ProportionThinner>
+    <ProportionHardener>0.2</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>40</id>
+    <DensType>3</DensType>
+    <Name>SRA</Name>
+    <DensityValue>0.9</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>41</id>
+    <DensType>2</DensType>
+    <Name>Blending Agent</Name>
+    <DensityValue>0.89</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>42</id>
+    <DensType>4</DensType>
+    <Name>Отвердитель 2K PP</Name>
+    <DensityValue>0.9</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>43</id>
+    <DensType>3</DensType>
+    <Name>Разбавитель Multi Thinner</Name>
+    <DensityValue>0.83</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>44</id>
+    <DensType>4</DensType>
+    <Name>Отвердитель стандартн.</Name>
+    <DensityValue>0.9</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>45</id>
+    <DensType>4</DensType>
+    <Name>Отвердитель быстрый</Name>
+    <DensityValue>0.9</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>46</id>
+    <DensType>3</DensType>
+    <Name>Fade Out</Name>
+    <DensityValue>0.9</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>47</id>
+    <DensType>2</DensType>
+    <Name>Novol Plus 700</Name>
+    <DensityValue>0.83</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>48</id>
+    <DensType>2</DensType>
+    <Name>Seal Coat  (барьерная жидкость)</Name>
+    <DensityValue>0.8</DensityValue>
+    <AccordingThinner>0</AccordingThinner>
+    <AccordingHardener>0</AccordingHardener>
+    <ProportionThinner>0</ProportionThinner>
+    <ProportionHardener>0</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>51</id>
+    <DensType>1</DensType>
+    <Name>2K Filler 540 белый (не шлиф)</Name>
+    <DensityValue>1.517</DensityValue>
+    <AccordingThinner>43</AccordingThinner>
+    <AccordingHardener>44</AccordingHardener>
+    <ProportionThinner>0.4</ProportionThinner>
+    <ProportionHardener>0.2</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>52</id>
+    <DensType>1</DensType>
+    <Name>2K Filler 540 серый (не шлиф)</Name>
+    <DensityValue>1.48</DensityValue>
+    <AccordingThinner>43</AccordingThinner>
+    <AccordingHardener>44</AccordingHardener>
+    <ProportionThinner>0.4</ProportionThinner>
+    <ProportionHardener>0.2</ProportionHardener>
+  </Density>
+  <Density xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <id>53</id>
+    <DensType>1</DensType>
+    <Name>2K Filler 540 чёрный (не шлиф)</Name>
+    <DensityValue>1.42</DensityValue>
+    <AccordingThinner>43</AccordingThinner>
+    <AccordingHardener>44</AccordingHardener>
+    <ProportionThinner>0.4</ProportionThinner>
+    <ProportionHardener>0.2</ProportionHardener>
+  </Density>
+</Densities>

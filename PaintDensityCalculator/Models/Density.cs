@@ -1,12 +1,22 @@
-﻿using System.Xml.Serialization;
+﻿using System;
+using System.Collections.Generic;
+using System.Xml.Serialization;
 using PaintDensityCalculator.Utils;
 
 namespace PaintDensityCalculator.Models
 {
-    [XmlRoot("XmlDensityRoot")]
+    [Serializable, XmlRoot("Densities")]
+    public class Densities
+    {
+        [XmlArrayItem("Density", typeof(Density))]
+        public List<Density> DensitiesList { get; set; }
+    }
+
+
+    [Serializable, XmlRoot("Density")]
     public class Density : NotifyPropertyChangedImplementation
     {
-        [XmlAttribute("id")]
+        [XmlElement(ElementName = "id", DataType = "int")]
         public int Id
         {
             get { return _id; }
@@ -17,7 +27,7 @@ namespace PaintDensityCalculator.Models
             }
         }
 
-        [XmlAttribute(DataType = "int")]
+        [XmlElement(ElementName = "DensType", DataType = "int")]
         public int DensType
         {
             get { return _densType; }
@@ -28,7 +38,7 @@ namespace PaintDensityCalculator.Models
             }
         }
 
-        [XmlAttribute(DataType = "string")]
+        [XmlElement(ElementName = "Name", DataType = "string")]
         public string Name {
             get { return _name; }
             set
@@ -38,7 +48,7 @@ namespace PaintDensityCalculator.Models
             }
         }
 
-        [XmlAttribute(DataType = "double")]
+        [XmlElement(ElementName = "DensityValue", DataType = "float")]
         public float DensityValue {
             get { return _densityValue; }
             set
@@ -47,8 +57,8 @@ namespace PaintDensityCalculator.Models
                 OnPropertyChanged("DensityValue");
             }
         }
-        
-        [XmlAttribute(DataType = "int")]
+
+        [XmlElement(ElementName = "AccordingThinner", DataType = "int")]
         public int AccordingThinner {
             get { return _accordingThinner; }
             set
@@ -58,7 +68,7 @@ namespace PaintDensityCalculator.Models
             }
         }
 
-        [XmlAttribute(DataType = "int")]
+        [XmlElement(ElementName = "AccordingHardener", DataType = "int")]
         public int AccordingHardener {
             get { return _accordingHardener; }
             set
@@ -68,7 +78,7 @@ namespace PaintDensityCalculator.Models
             }
         }
 
-        [XmlAttribute(DataType = "double")]
+        [XmlElement(ElementName = "ProportionThinner", DataType = "float")]
         public float ProportionThinner {
             get { return _proportionThinner; }
             set
@@ -78,7 +88,7 @@ namespace PaintDensityCalculator.Models
             }
         }
 
-        [XmlAttribute(DataType = "double")]
+        [XmlElement(ElementName = "ProportionHardener", DataType = "float")]
         public float ProportionHardener {
             get { return _proportionHardener; }
             set

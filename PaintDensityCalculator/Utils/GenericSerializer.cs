@@ -1,68 +1,47 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Windows;
 using System.Xml;
+using System.Xml.Linq;
 using System.Xml.Serialization;
 
 namespace PaintDensityCalculator.Utils
 {
-    public class GenericSerializer<T> where T : class, new()
+    public static class GenericSerializer<T> where T : new()
     {
-        private XmlSerializer _xmlSerializer;
-
-        public GenericSerializer()
+        public static T Deserialize(XDocument doc)
         {
-            _xmlSerializer = new XmlSerializer(typeof(T));
+            var xmlSerializer = new XmlSerializer(typeof(T));
+
+            using (var reader = doc.Root.CreateReader())
+            {
+                return (T)xmlSerializer.Deserialize(reader);
+            }
         }
 
-        public T Deserialize(string xml)
+        public static T Deserialize(XmlReader reader)
         {
-            TextReader reader = new StringReader(xml);
-            return Deserialize(reader);
+            var xmlSerializer = new XmlSerializer(typeof(T));
+            return (T)xmlSerializer.Deserialize(reader);
         }
 
-        public T Deserialize(XmlDocument doc)
+        public static XDocument Serialize(object obj)
         {
-            TextReader reader = new StringReader(doc.OuterXml);
-            return Deserialize(reader);
-        }
+            var xmlSerializer = new XmlSerializer(obj.GetType());
 
-        public T Deserialize(TextReader reader)
-        {
-            var o = (T)_xmlSerializer.Deserialize(reader);
-            reader.Close();
-            return o;
-        }
+            var doc = new XDocument();
+            using (var writer = doc.CreateWriter())
+            {
+                xmlSerializer.Serialize(writer, obj);
+            }
 
-        public XmlDocument Serialize(T rootclass)
-        {
-            var xml = StringSerialize(rootclass);
-            var doc = new XmlDocument {PreserveWhitespace = true};
-            doc.LoadXml(xml);
             return doc;
-        }
-
-        private string StringSerialize(T rootclass)
-        {
-            TextWriter w = WriterSerialize(rootclass);
-            string xml = w.ToString();
-            w.Close();
-            return xml.Trim();
-        }
-
-        private TextWriter WriterSerialize(T rootclass)
-        {
-            TextWriter w = new StringWriter();
-            _xmlSerializer = new XmlSerializer(typeof(T));
-            _xmlSerializer.Serialize(w, rootclass);
-            w.Flush();
-            return w;
         }
 
         public static T ReadFile(string file)
         {
-            var serializer = new GenericSerializer<T>();
             try
             {
                 string xml;
@@ -71,36 +50,49 @@ namespace PaintDensityCalculator.Utils
                     xml = reader.ReadToEnd();
                     reader.Close();
                 }
-                return serializer.Deserialize(xml);
+                return Deserialize(XDocument.Parse(xml));
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Произошла при чтении файла", ex.Message, MessageBoxButton.OK, MessageBoxImage.Error);
             }
+
             return new T();
         }
 
-        public static bool WriteFile(string fileName, T config)
+        public static bool WriteFile(string fileName, T obj)
         {
             var ok = false;
-            var serializer = new GenericSerializer<T>();
             try
             {
-                var xml = serializer.Serialize(config).OuterXml;
-                var filePath = Assembly.GetExecutingAssembly().Location + "\\" + fileName;
-                using (var writer = new StreamWriter(filePath, true))
-                {
-                    writer.Write(xml.Trim());
-                    writer.Flush();
-                    writer.Close();
-                }
+                var xml = Serialize(obj);
+                var xdoc = new XElement("Densities",
+                    new XElement(xml.Root));
+                var path = @"C:\Git\PaintDensityCalculator\PaintDensityCalculator\bin\Debug";
+//                var filePath = Path.Combine(Assembly.GetExecutingAssembly().Location, fileName);
+                var filePath = Path.Combine(path, fileName);
+                xdoc.Save(filePath);
+                
                 ok = true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Произошла при записи файла", ex.Message, MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(ex.Message, "Произошла при записи файла", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             return ok;
+        }
+
+        public static void AddItemToFile(string fileName, string rootElement, T obj)
+        {
+            var file = Path.Combine(Assembly.GetExecutingAssembly().Location, fileName);
+            var document = XDocument.Load(file);
+            // Or var characters = document.Root.Element(ns + "Characters")
+            var characters = document.Descendants(rootElement).FirstOrDefault();
+            if (characters != null)
+            {
+                characters.Add(new XElement(Serialize(obj).Root));
+                document.Save(file);
+            }
         }
     }
 }
